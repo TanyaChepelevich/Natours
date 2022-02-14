@@ -1,0 +1,37 @@
+/*we use the inherit keyword to force inheritance.
+So the box-sizing property by itself is not inherited, 
+but by setting the box-sizing property 
+on each and every element on the entire page (*) to inherit, 
+it'll automatically inherit whatever we put here (body el) on border-box.*/
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+/*16px is 100% and the default font-size browser setting
+"liveSassCompile.settings.autoprefix": [
+        "last 5 versions"
+    ],
+
+ if we set the font to, like, the 10px, 
+then we remove the ability for the users 
+to see our website properly,
+because they can no longer change the default font size.
+that is why we're going to set 
+over a font size to a percentage here, 
+which will translate to a percentage 
+of the font size given by the browser.
+
+10 px is what we want for the root font size
+it is 62.5% from the default setting.*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    box-sizing: border-box;
+}
