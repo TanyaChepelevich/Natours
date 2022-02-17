@@ -32,6 +32,13 @@
             background-color: $color-white;
         }
     }
+    &--green {
+        background-color: $color-primary;
+        color: $color-white;
+        &::after {
+            background-color: $color-primary;
+        }
+    }
 
     /* after pseudo-element 
 is basically treated like a child of the button. 
